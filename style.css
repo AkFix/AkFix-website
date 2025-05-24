@@ -5,6 +5,62 @@ body {
   background-color: #f0f2f5;
   color: #222;
   text-align: center;
+
+/* Reviews Section Styling */
+#reviews {
+  padding: 50px;
+  background-color: #f9f9f9;
+  text-align: center;
+  overflow: hidden;
+}
+
+#reviews .review-heading {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animated-review {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: zoomIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+  transition: transform 0.3s;
+}
+
+/* Optional: Add a subtle pulse on hover for extra emphasis */
+.animated-review:hover {
+  transform: scale(1.02);
+}
+
+/* Keyframes for the animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 }
 
 /* Header styling */
