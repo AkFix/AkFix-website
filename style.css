@@ -1,61 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f2f5;
-    color: #222;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #222;
+  text-align: center;
 }
 
+/* Header styling */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(45deg, #00AEEF, #0056b3);
-    color: white;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #00AEEF, #0056b3);
+  color: white;
+  padding: 20px;
 }
 
 .logo-container img {
-    height: 60px;
+  height: 60px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f0f0f0;
-    text-shadow: 1px 1px 5px white;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 5px white;
 }
 
+/* Home Section Two-Column Layout */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.home-image {
+  flex: 1;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Common section styling */
 section {
-    padding: 50px;
+  padding: 50px;
 }
 
+/* Button Styling */
 button {
-    background-color: #00AEEF;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.4s;
+  background-color: #00AEEF;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 button:hover {
-    background-color: #0056b3;
-    box-shadow: 0px 0px 12px #00AEEF;
+  background-color: #0056b3;
+  box-shadow: 0px 0px 12px #00AEEF;
+}
+
+/* Service Cards */
+.service {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 30%;
 }
 
 /* Animations */
@@ -64,24 +102,25 @@ button:hover {
 .bounce { animation: bounce 1.2s infinite; }
 .glow { animation: glowEffect 2s infinite; }
 
-/* Keyframes */
+/* Keyframes for animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes glowEffect {
-    0% { box-shadow: 0px 0px 10px #00AEEF; }
-    50% { box-shadow: 0px 0px 20px #0056b3; }
-    100% { box-shadow: 0px 0px 10px #00AEEF; }
+  0% { box-shadow: 0px 0px 10px #00AEEF; }
+  50% { box-shadow: 0px 0px 20px #0056b3; }
+  100% { box-shadow: 0px 0px 10px #00AEEF; }
 }
+
